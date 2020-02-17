@@ -14,7 +14,7 @@ pip install gspread
 pip install pandas
 pip install oauth2client
 ```
-3. In line 12 `docID = `, replace string with ID of the document that you want to download
+3. In line 9 `downoalod_sheet()`, replace string with ID of the document that you want to download
 ![Screenshot 2020-02-17 at 10 16 43](https://user-images.githubusercontent.com/24693129/74635554-ef398c80-516e-11ea-94c1-66bad04d1abb.png)
 
 4. Run Script and enjoy your .xlsx file
