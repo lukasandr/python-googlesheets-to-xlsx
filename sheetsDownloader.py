@@ -6,7 +6,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 
 def main():
-    download_sheet("1YoV-0EoBmDGLg96mbCCY5Sw56YpTC_G9GDkNw60TbuQ")
+    download_sheet("1ptc4gwo89JYLrNGGwxW887MqsLQWJNvhjOB2f-vCY10")
 
 
 def download_sheet(id):
@@ -24,7 +24,7 @@ def download_sheet(id):
     for i, worksheet in enumerate(spreadsheet.worksheets()):
         filename = str(i + 1) + '_' + str(worksheet.title) + '.csv'
         csvFileNames.append(filename)
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerows(worksheet.get_all_values())
 
